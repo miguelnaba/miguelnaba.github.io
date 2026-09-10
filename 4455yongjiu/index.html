@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4455永久在线毛片观看-高清流畅影视导航与播放指南</title>
+    <meta name="description" content="4455永久在线毛片观看，提供稳定的影视导航与播放指引，涵盖多种类型内容，界面简洁，无需安装，随时点播。">
+    <meta name="keywords" content="4455永久在线,在线观看,毛片,影视导航,播放指南">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f2f4f8;
+            color: #1e1e2a;
+            line-height: 1.6;
+        }
+        .wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* header */
+        .site-header {
+            background: #16161e;
+            color: #fff;
+            padding: 16px 0;
+            border-bottom: 4px solid #e8404a;
+        }
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            background: linear-gradient(145deg, #f5d7d9, #f0b0b5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+        .logo small {
+            font-size: 0.8rem;
+            background: none;
+            color: #aaa;
+            letter-spacing: 2px;
+            margin-left: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-size: 1rem;
+        }
+        .nav-links a:hover {
+            color: #ff8b92;
+        }
+        .btn-user {
+            background: #e8404a;
+            padding: 8px 18px;
+            border-radius: 40px;
+            color: #fff !important;
+            font-weight: 600;
+        }
+        /* hero */
+        .hero {
+            background: radial-gradient(circle at 20% 30%, #2c2c3a, #12121c);
+            color: #fff;
+            padding: 60px 0;
+            margin-bottom: 30px;
+            border-radius: 0 0 40px 40px;
+        }
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        .hero-content {
+            flex: 1 1 300px;
+        }
+        .hero-content h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffe6e8, #ffb0b6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #bbb;
+            margin-bottom: 30px;
+            max-width: 550px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid #ff6b73;
+            padding: 8px 22px;
+            border-radius: 60px;
+            font-weight: 600;
+            color: #ffc9cd;
+            letter-spacing: 0.5px;
+        }
+        .hero-visual {
+            flex: 1 1 250px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 32px;
+            padding: 25px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        .play-symbol {
+            font-size: 5rem;
+            line-height: 1;
+            filter: drop-shadow(0 8px 12px rgba(232, 64, 74, 0.6));
+        }
+        .hero-visual p {
+            color: #ddd;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        /* cards section */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            letter-spacing: -0.5px;
+            border-left: 8px solid #e8404a;
+            padding-left: 18px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 20px 0 40px;
+        }
+        .card-item {
+            background: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s;
+            border: 1px solid #ecebf0;
+        }
+        .card-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 30px rgba(0, 0, 0, 0.08);
+            border-color: #ffb0b6;
+        }
+        .card-tag {
+            background: #fde7e9;
+            color: #b3303a;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .card-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+        .card-item p {
+            color: #4a4a5a;
+            margin-bottom: 16px;
+        }
+        .btn-play {
+            background: #16161e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 60px;
+            font-weight: 600;
+            cursor: default;
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(145deg, #1e1e2a, #2d2d3a);
+        }
+        .btn-play:hover {
+            background: #e8404a;
+        }
+        .list-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .list-block {
+            flex: 1 1 280px;
+            background: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            border: 1px solid #e6e4ec;
+        }
+        .list-block h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-bottom: 2px solid #f0d0d3;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+        .list-block ul {
+            list-style: none;
+        }
+        .list-block li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .list-block li:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            font-weight: 700;
+            color: #e8404a;
+            margin-right: 12px;
+        }
+        .faq-box {
+            background: #faf9fc;
+            border-radius: 30px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #e2dfe9;
+        }
+        .faq-item summary {
+            font-weight: 600;
+            font-size: 1.2rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .faq-item summary::before {
+            content: "Q";
+            background: #e8404a;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        .faq-item p {
+            margin-top: 15px;
+            padding-left: 40px;
+            color: #444;
+        }
+        footer {
+            background: #17171f;
+            color: #9a9ab0;
+            padding: 40px 0;
+            margin-top: 50px;
+            border-radius: 30px 30px 0 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 28px;
+            margin-bottom: 25px;
+        }
+        .footer-links a {
+            color: #c8c8dd;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .footer-links a:hover {
+            color: #ffaeb5;
+        }
+        .disclaimer {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @media (max-width: 680px) {
+            .header-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            .btn-user {
+                margin-left: 0;
+            }
+            .hero-grid {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrapper header-flex">
+            <a href="#" class="logo">4455<span>·永在线</span></a>
+            <ul class="nav-links">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">分类</a></li>
+                <li><a href="#">榜单</a></li>
+                <li><a href="#">最新</a></li>
+                <li><a href="#" class="btn-user">播放记录</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero 区域 -->
+        <div class="hero">
+            <div class="wrapper hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">🔥 全天候稳定播放</span>
+                    <h1>4455永久在线 · 毛片观影</h1>
+                    <p>简洁入口 · 无需安装 · 快速缓冲。为成年用户提供可持续访问的影视导航与播放指引，多种题材持续更新。</p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+                        <a href="#" class="btn-play" style="background: #e8404a;">开始观看</a>
+                        <a href="#" class="btn-play" style="background: transparent; border: 1px solid #ff8b92;">浏览片单</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="play-symbol">▶</div>
+                    <p>无限流媒体 · 高清体验</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <!-- 热门分类卡片 -->
+            <h2 class="section-title">🎬 热门分类 · 一键探索</h2>
+            <div class="card-grid">
+                <article class="card-item">
+                    <span class="card-tag">精选</span>
+                    <h3>都市情感</h3>
+                    <p>贴近生活的剧情，新片每日更新，播放源稳定。</p>
+                    <a href="#" class="btn-play">进入频道</a>
+                </article>
+                <article class="card-item">
+                    <span class="card-tag">热门</span>
+                    <h3>浪漫校园</h3>
+                    <p>青春气息，高颜值主演，热门作品持续推荐。</p>
+                    <a href="#" class="btn-play">进入频道</a>
+                </article>
+                <article class="card-item">
+                    <span class="card-tag">经典</span>
+                    <h3>家庭伦理</h3>
+                    <p>深度刻画，经典高分合集，永久典藏片单。</p>
+                    <a href="#" class="btn-play">进入频道</a>
+                </article>
+                <article class="card-item">
+                    <span class="card-tag">新上线</span>
+                    <h3>职场秘恋</h3>
+                    <p>2025年新作，高能剧情，在线播放无缓冲。</p>
+                    <a href="#" class="btn-play">进入频道</a>
+                </article>
+            </div>
+
+            <!-- 双栏列表：实时热门+最新更新 -->
+            <div class="list-section">
+                <div class="list-block">
+                    <h2>📈 本周热门榜</h2>
+                    <ul>
+                        <li><span><span class="rank">1</span> 深夜办公室的密会</span><span style="color:#e8404a;">HD</span></li>
+                        <li><span><span class="rank">2</span> 邻居的诱惑</span><span style="color:#e8404a;">超清</span></li>
+                        <li><span><span class="rank">3</span> 禁忌之吻</span><span style="color:#e8404a;">4K</span></li>
+                        <li><span><span class="rank">4</span> 合租情缘</span><span style="color:#e8404a;">1080P</span></li>
+                        <li><span><span class="rank">5</span> 午夜直播间</span><span style="color:#e8404a;">高清</span></li>
+                    </ul>
+                </div>
+                <div class="list-block">
+                    <h2>🕓 最近更新</h2>
+                    <ul>
+                        <li><span><span class="rank">+</span> 私人教练的温柔</span><span>今天</span></li>
+                        <li><span><span class="rank">+</span> 出差夜：迷情酒店</span><span>昨天</span></li>
+                        <li><span><span class="rank">+</span> 办公室的秘密关系</span><span>2天前</span></li>
+                        <li><span><span class="rank">+</span> 温柔房东姐姐</span><span>3天前</span></li>
+                        <li><span><span class="rank">+</span> 雨夜来客</span><span>4天前</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 播放小贴士 + 永久在线说明 -->
+            <div style="background: #eef0f7; border-radius: 30px; padding: 30px; margin: 30px 0;">
+                <h2 style="font-size: 1.8rem; margin-bottom: 20px;">📌 4455永久在线 · 使用指引</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 20px;">
+                    <div><strong>✅ 稳定线路</strong><br>多节点自动切换，观看过程不卡顿。</div>
+                    <div><strong>🔞 年龄提示</strong><br>本站内容仅限成年人访问，请确认年龄。</div>
+                    <div><strong>⚡ 播放帮助</strong><br>若无法播放请尝试刷新或切换线路。</div>
+                    <div><strong>🔄 永久入口</strong><br>收藏本页，获取最新访问地址。</div>
+                </div>
+            </div>
+
+            <!-- FAQ部分 -->
+            <div class="faq-box">
+                <h2 style="font-size: 2rem; margin-bottom: 15px;">常见问题</h2>
+                <details class="faq-item">
+                    <summary>为什么有时候播放器加载慢？</summary>
+                    <p>可能与本地网络有关，建议切换画质或使用Chrome/Edge浏览器，同时可尝试备用播放线路。</p>
+                </details>
+                <details class="faq-item">
+                    <summary>“永久在线”是什么意思？</summary>
+                    <p>表示资源服务器长期维护，提供持续访问，但偶尔因升级或网络政策可能会有短暂调整，请留意页面提示。</p>
+                </details>
+                <details class="faq-item">
+                    <summary>如何收藏本站？</summary>
+                    <p>按Ctrl+D（Windows）或Command+D（Mac）即可收藏本页，方便随时返回最新地址。</p>
+                </details>
+                <details class="faq-item">
+                    <summary>播放时出现声音画面不同步？</summary>
+                    <p>多为临时解码问题，可暂停等待几秒或重新播放，也可更换清晰度。</p>
+                </details>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">内容分类</a>
+                <a href="#">帮助中心</a>
+                <a href="#">隐私声明</a>
+                <a href="#">联系我们</a>
+            </div>
+            <p class="disclaimer">© 2025 4455 永久在线 · 仅供成年人观看 · 请合理作息，健康娱乐。本页面仅为导航与功能展示，所有内容均遵守相关法律法规。</p>
+        </div>
+    </footer>
+</body>
+</html>
