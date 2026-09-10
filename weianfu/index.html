@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>慰安妇集中营-历史真相与记忆档案</title>
+  <meta name="description" content="慰安妇集中营历史档案：记录日军性奴役制度，见证受害者证言，传承历史记忆，警惕历史悲剧。" >
+  <meta name="keywords" content="慰安妇, 集中营, 历史真相, 受害者证言, 二战历史, 日军暴行, 记忆档案">
+  <style>
+    /* ===== 全局重置与基础 ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f4f1eb;
+      font-family: "Noto Serif SC", "Source Han Serif SC", "SimSun", Georgia, serif;
+      color: #2d2a26;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    a {
+      color: #7a4e2e;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #3b281c;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    /* ===== 页眉 / 导航 ===== */
+    .site-header {
+      background-color: #3a2b22;
+      padding: 14px 0;
+      border-bottom: 3px solid #a67c52;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      font-size: 28px;
+      color: #d9c2a7;
+    }
+    .logo-text {
+      font-size: 22px;
+      font-weight: 600;
+      color: #f3e9dc;
+      letter-spacing: 1px;
+    }
+    .logo-text span {
+      color: #d0a57e;
+    }
+    .site-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .site-nav a {
+      color: #e6d8c8;
+      font-size: 17px;
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+    }
+    .site-nav a:hover {
+      border-bottom-color: #d0a57e;
+      color: #fff;
+      text-decoration: none;
+    }
+    /* ===== 移动导航折叠 ===== */
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .site-nav ul {
+        justify-content: center;
+        gap: 16px;
+      }
+      .logo-text {
+        font-size: 20px;
+      }
+    }
+    /* ===== 主视觉 / 首屏 ===== */
+    .hero-section {
+      background: linear-gradient(145deg, #2d2119 0%, #4d3827 100%);
+      color: #f0e6d8;
+      padding: 60px 0;
+      border-bottom: 1px solid #b49a7c;
+    }
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hero-content h1 {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      line-height: 1.3;
+      margin-bottom: 16px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero-sub {
+      font-size: 20px;
+      color: #d9c2a7;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .hero-desc {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 32px;
+      color: #ded1c0;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #a67c52;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border: 1px solid #c6a27e;
+      transition: background 0.25s ease;
+      font-size: 18px;
+    }
+    .btn:hover {
+      background-color: #8b623f;
+      color: #fff;
+      text-decoration: none;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #d0a57e;
+      color: #d0a57e;
+      margin-left: 10px;
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      border-color: #fff;
+    }
+    @media (max-width: 600px) {
+      .hero-content h1 {
+        font-size: 32px;
+      }
+      .hero-sub {
+        font-size: 18px;
+      }
+      .btn {
+        padding: 10px 16px;
+        font-size: 16px;
+      }
+      .btn-outline {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+    /* ===== 资讯/档案卡片区 ===== */
+    .section-title {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 50px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #a67c52;
+      display: inline-block;
+      color: #2d2a26;
+    }
+    .section-sub {
+      color: #5f5346;
+      margin-bottom: 30px;
+      font-size: 17px;
+    }
+    .archive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+      margin: 30px 0 40px;
+    }
+    .archive-card {
+      background: #fffcf7;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-left: 5px solid #a67c52;
+      padding: 0;
+    }
+    .archive-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+    }
+    .card-image {
+      background-color: #c9b6a0;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4e3e31;
+      font-size: 56px;
+      font-weight: 300;
+      text-shadow: 2px 2px 0 rgba(255,255,240,0.3);
+      background-image: radial-gradient(circle at 20% 30%, #dac9b8 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #3b2c1e;
+    }
+    .card-meta {
+      font-size: 14px;
+      color: #7f6b58;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .card-content p {
+      font-size: 15px;
+      color: #403a32;
+      margin-bottom: 12px;
+    }
+    .read-more {
+      font-weight: 500;
+      color: #7a4e2e;
+      font-size: 15px;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    /* ===== 证言/时间线 ===== */
+    .testimony-block {
+      background: #e9dfd2;
+      padding: 40px 0;
+    }
+    .testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .testimonial-item {
+      flex: 1 1 300px;
+      background: rgba(255,255,255,0.6);
+      padding: 24px;
+      border-radius: 20px;
+      border: 1px solid #d3bda8;
+      backdrop-filter: blur(2px);
+    }
+    .testimonial-item blockquote {
+      font-style: italic;
+      font-size: 18px;
+      color: #2e241c;
+      margin: 0 0 12px;
+      quotes: "“" "”";
+    }
+    .testimonial-item blockquote::before {
+      content: "“";
+      font-size: 32px;
+      color: #7a4e2e;
+      vertical-align: -8px;
+      margin-right: 5px;
+    }
+    .testimonial-author {
+      font-weight: 600;
+      color: #5a3e2b;
+    }
+    /* ===== 历史脉络 ===== */
+    .timeline-list {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+    }
+    .timeline-list li {
+      padding: 10px 0 10px 40px;
+      border-left: 2px solid #a67c52;
+      position: relative;
+      margin-left: 10px;
+    }
+    .timeline-list li::before {
+      content: "◈";
+      position: absolute;
+      left: -12px;
+      background: #f4f1eb;
+      padding-right: 4px;
+      color: #7a4e2e;
+      font-size: 22px;
+    }
+    .timeline-date {
+      font-weight: 700;
+      color: #5a3e2b;
+    }
+    /* ===== 相关书籍/资源 ===== */
+    .resource-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .resource-item {
+      background: #fff;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #d8c7b6;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .resource-item h4 {
+      font-size: 18px;
+      color: #3b2c1e;
+      margin-bottom: 6px;
+    }
+    .resource-item p {
+      font-size: 14px;
+      color: #5e4d3a;
+    }
+    /* ===== FAQ ===== */
+    .faq-details {
+      margin: 20px 0 40px;
+    }
+    .faq-item {
+      background: #fff9f2;
+      margin-bottom: 12px;
+      border-radius: 30px;
+      border: 1px solid #dac4ae;
+      padding: 6px 20px;
+    }
+    .faq-item summary {
+      font-weight: 600;
+      cursor: pointer;
+      padding: 12px 0;
+      font-size: 18px;
+      color: #4a3423;
+      list-style: none;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-item summary:before {
+      content: "❓";
+      margin-right: 12px;
+      color: #a67c52;
+    }
+    .faq-item p {
+      padding: 0 0 18px 28px;
+      color: #3d352d;
+    }
+    /* ===== 页脚 ===== */
+    .site-footer {
+      background-color: #2a211b;
+      color: #c4b6a8;
+      padding: 40px 0 30px;
+      margin-top: 60px;
+      border-top: 6px solid #8a6e55;
+      font-size: 15px;
+    }
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-section h4 {
+      color: #e7d7c5;
+      margin-bottom: 12px;
+      font-size: 18px;
+      border-left: 3px solid #a67c52;
+      padding-left: 10px;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section li {
+      margin-bottom: 5px;
+    }
+    .footer-section a {
+      color: #bda98e;
+    }
+    .footer-section a:hover {
+      color: #ffffff;
+    }
+    .copyright {
+      margin-top: 40px;
+      text-align: center;
+      border-top: 1px solid #4f3f32;
+      padding-top: 20px;
+      color: #a28b77;
+    }
+    /* ===== 响应式 ===== */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 24px;
+      }
+      .hero-content h1 {
+        font-size: 32px;
+      }
+      .timeline-list li {
+        padding-left: 25px;
+      }
+    }
+  </style>
+  <!-- 指定统计脚本 -->
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-area">
+        <span class="logo-icon">🕊️</span>
+        <div class="logo-text">历史记忆·<span>慰安妇档案</span></div>
+      </div>
+      <nav class="site-nav" aria-label="主导航">
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">集中营史料</a></li>
+          <li><a href="#">证言口述</a></li>
+          <li><a href="#">研究论著</a></li>
+          <li><a href="#">纪念活动</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首屏 -->
+    <section class="hero-section">
+      <div class="container hero-content">
+        <h1>慰安妇集中营</h1>
+        <p class="hero-sub">历史真相 · 受害者证言 · 民族伤痕</p>
+        <p class="hero-desc">系统性记录二战时期日军“慰安妇”制度的集中营遗址、幸存者记忆与学术研究，让历史不被遗忘。</p>
+        <div>
+          <a href="#testimony" class="btn">阅读幸存者证言</a>
+          <a href="#timeline" class="btn btn-outline">历史时间线</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 档案卡片区 -->
+    <div class="container">
+      <h2 class="section-title">集中营档案</h2>
+      <p class="section-sub">从遗址、记录到影像，还原慰安妇集中营的真实面貌</p>
+      <div class="archive-grid">
+        <article class="archive-card">
+          <div class="card-image">🏚️</div>
+          <div class="card-content">
+            <h3>海南“慰安妇”集中营遗址</h3>
+            <div class="card-meta"><span>📍 遗址调查</span><span>📅 2021</span></div>
+            <p>现存的 barracks 遗址、地窖与铁丝网残骸，是日军暴力殖民的物证。当地幸存者后人持续进行记忆传承。</p>
+            <a href="#" class="read-more">继续阅读 →</a>
+          </div>
+        </article>
+        <article class="archive-card">
+          <div class="card-image">📜</div>
+          <div class="card-content">
+            <h3>“慰安妇”制度文件解密</h3>
+            <div class="card-meta"><span>📂 档案库</span><span>🕰️ 1940s</span></div>
+            <p>从日军官方文件与随军记录中复原制度脉络，包括“慰安所”管理规定、输送记录等一手材料。</p>
+            <a href="#" class="read-more">继续阅读 →</a>
+          </div>
+        </article>
+        <article class="archive-card">
+          <div class="card-image">🎞️</div>
+          <div class="card-content">
+            <h3>幸存者影像记忆</h3>
+            <div class="card-meta"><span>🎥 口述史</span><span>📹 纪录片</span></div>
+            <p>多位幸存阿婆的影像证言，记录她们从被掳、囚禁到幸存的生命历程，是珍贵的民族记忆。</p>
+            <a href="#" class="read-more">继续阅读 →</a>
+          </div>
+        </article>
+        <article class="archive-card">
+          <div class="card-image">🗺️</div>
+          <div class="card-content">
+            <h3>集中营分布地图</h3>
+            <div class="card-meta"><span>🧭 地理信息</span><span>📌 东亚/东南亚</span></div>
+            <p>根据学者调研绘制的日军慰安所及集中营分布图，覆盖中国、朝鲜半岛、菲律宾、印尼等地区。</p>
+            <a href="#" class="read-more">继续阅读 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- 证言区块 -->
+    <section class="testimony-block" id="testimony">
+      <div class="container">
+        <h2 class="section-title" style="border-color: #8b623f;">幸存者证言</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-item">
+            <blockquote>“被抓进去那天起，就再没有见过太阳。他们不把我们当人，只是工具。”</blockquote>
+            <span class="testimonial-author">—— 金奶奶 (1924-2020)，全罗南道</span>
+          </div>
+          <div class="testimonial-item">
+            <blockquote>“集中营里每天都有姐妹死去，我活下来只是运气。这段历史一定要让年轻人知道。”</blockquote>
+            <span class="testimonial-author">—— 李阿婆 (1927-2019)，海南保亭</span>
+          </div>
+          <div class="testimonial-item">
+            <blockquote>“我们等了半辈子，只等一句道歉。历史不能消失。”</blockquote>
+            <span class="testimonial-author">—— 受害者支援团体联合声明</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 时间线 历史脉络 -->
+    <div class="container" id="timeline">
+      <h2 class="section-title">历史时间轴</h2>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">1931-1937</span> — 日军开始在中国东北等地设立“慰安所”，有组织的暴力系统初现。</li>
+        <li><span class="timeline-date">1937-1941</span> — 南京、上海、海南等地大量女性被掳入集中营，制度扩大化。</li>
+        <li><span class="timeline-date">1942-1945</span> — 太平洋战争爆发后，慰安妇制度扩展到东南亚各占领区。</li>
+        <li><span class="timeline-date">1945-1990s</span> — 幸存者沉默数十年，部分人开始打破沉默，要求日本政府道歉赔偿。</li>
+        <li><span class="timeline-date">2012-至今</span> — 多国建立“慰安妇”纪念档案，相关史料列入世界记忆名录。</li>
+      </ul>
+    </div>
+
+    <!-- 学术资源与书籍 -->
+    <div class="container">
+      <h2 class="section-title">研究资源与书籍</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h4>《慰安妇研究》</h4>
+          <p>综合历史学、社会学视角，系统论述战时性奴隶制度及战后遗留问题。</p>
+        </div>
+        <div class="resource-item">
+          <h4>《沉默的铁证》</h4>
+          <p>收录全球幸存者照片与证言，由独立记者团队整理，极具冲击力。</p>
+        </div>
+        <div class="resource-item">
+          <h4>记忆的伤痕</h4>
+          <p>聚焦中国海南、云南等地集中营遗址的田野调查，附影像档案。</p>
+        </div>
+        <div class="resource-item">
+          <h4>日军“慰安妇”档案汇编</h4>
+          <p>来自中、韩、日、美档案馆的解密文件集，是研究者的基础史料。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="container">
+      <h2 class="section-title">常见问题与真相辨析</h2>
+      <div class="faq-details">
+        <details class="faq-item">
+          <summary>“慰安妇集中营”和“慰安所”有何区别？</summary>
+          <p>集中营多指军队直接控制、囚禁并强迫女性提供性服务的封闭营地，条件更恶劣，带有强制收容性质。慰安所部分为民间经营，但同样充满暴力与奴役。</p>
+        </details>
+        <details class="faq-item">
+          <summary>为什么这些历史长期被忽略？</summary>
+          <p>战后由于政治冷战、受害者羞耻感与日军掩盖行为，大量档案被封存。1990年代起，幸存者勇敢发声，学界逐步推动史料公开。</p>
+        </details>
+        <details class="faq-item">
+          <summary>现在还能为受害者做什么？</summary>
+          <p>支持受害者援助团体、参与纪念馆建设、推动历史教育，以及呼吁日本政府正式道歉和赔偿。</p>
+        </details>
+        <details class="faq-item">
+          <summary>如何避免历史悲剧重演？</summary>
+          <p>通过教育、透明档案与持续的人权监督，警惕战争中的性别暴力，捍卫人的尊严。</p>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>关于档案</h4>
+          <ul>
+            <li><a href="#">项目宗旨</a></li>
+            <li><a href="#">史料征集</a></li>
+            <li><a href="#">志愿者</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>纪念机构</h4>
+          <ul>
+            <li><a href="#">上海慰安妇纪念馆</a></li>
+            <li><a href="#">南京利济巷慰安所旧址</a></li>
+            <li><a href="#">韩国战争与女性人权博物馆</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>相关学术</h4>
+          <ul>
+            <li><a href="#">研究论文库</a></li>
+            <li><a href="#">口述史数据库</a></li>
+            <li><a href="#">影像档案</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>联络</h4>
+          <ul>
+            <li><a href="#">archives@history.memory</a></li>
+            <li><a href="#">+86 21 历史记忆</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 慰安妇集中营历史档案 · 铭记历史，勿忘真相</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
