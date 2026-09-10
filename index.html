@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸福爱人37-温暖情感故事与幸福生活指南</title>
+    <meta name="description" content="幸福爱人37专注于分享真实温暖的情感故事、夫妻相处之道与幸福生活智慧，帮助读者理解爱、经营爱，收获长久而踏实的亲密关系。">
+    <meta name="keywords" content="幸福爱人37,幸福婚姻,情感故事,夫妻相处,亲密关系,幸福生活">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #faf7f2;
+            color: #3d3a35;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: #fff;
+            box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #e88b7a, #d65f4f);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #d65f4f;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #b08a6e;
+            font-weight: 400;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #5a534c;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #d65f4f;
+        }
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #d65f4f;
+            border-radius: 2px;
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #5a534c;
+        }
+
+        /* 主视觉 */
+        .hero {
+            background: linear-gradient(120deg, #fdf1ec 0%, #f9e2d8 100%);
+            border-bottom: 1px solid #eedfd6;
+            padding: 60px 0 50px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .hero-copy h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: #4a2e24;
+            line-height: 1.25;
+            margin-bottom: 18px;
+        }
+        .hero-copy h1 .highlight {
+            color: #d65f4f;
+            position: relative;
+            display: inline-block;
+        }
+        .hero-copy p {
+            font-size: 1.05rem;
+            color: #6d5d53;
+            margin-bottom: 26px;
+            max-width: 520px;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        .btn-primary {
+            background: #d65f4f;
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(214, 95, 79, 0.3);
+        }
+        .btn-primary:hover {
+            background: #c04e3f;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #6d5d53;
+            border-color: #c9b8ad;
+        }
+        .btn-outline:hover {
+            border-color: #d65f4f;
+            color: #d65f4f;
+        }
+        .hero-visual {
+            background: #fff;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 12px 40px rgba(180, 130, 100, 0.12);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #5a3e32;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .hero-quote::before {
+            content: '“';
+            font-size: 4rem;
+            color: #e8b4a3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.4;
+        }
+        .hero-author {
+            color: #a08b7d;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+        .hero-tag {
+            display: inline-block;
+            background: #f9e2d8;
+            color: #b05a48;
+            padding: 4px 16px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        /* 栏目 */
+        .section {
+            padding: 60px 0;
+        }
+        .section-alt {
+            background: #fff;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4a2e24;
+            margin-bottom: 8px;
+        }
+        .section-header p {
+            color: #8a7a6e;
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 故事卡片 */
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .story-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            border: 1px solid #f0e6de;
+        }
+        .story-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(180, 130, 100, 0.12);
+        }
+        .story-thumb {
+            height: 160px;
+            background: linear-gradient(135deg, #f4d5c8, #e8b4a3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #fff;
+            font-weight: 700;
+        }
+        .story-thumb.th2 {
+            background: linear-gradient(135deg, #d9c2b0, #c5a48b);
+        }
+        .story-thumb.th3 {
+            background: linear-gradient(135deg, #eac4b8, #d69a8a);
+        }
+        .story-body {
+            padding: 24px;
+        }
+        .story-body h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #4a2e24;
+        }
+        .story-body p {
+            color: #7c6e63;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+        .story-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #b09b8e;
+            border-top: 1px solid #f5eee8;
+            padding-top: 14px;
+        }
+        .story-meta .read-more {
+            color: #d65f4f;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* 相处之道 */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .tip-item {
+            display: flex;
+            gap: 18px;
+            background: #faf7f2;
+            border-radius: 16px;
+            padding: 24px;
+            border-left: 4px solid #d65f4f;
+        }
+        .tip-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+        .tip-content h3 {
+            font-size: 1.1rem;
+            color: #4a2e24;
+            margin-bottom: 6px;
+        }
+        .tip-content p {
+            font-size: 0.9rem;
+            color: #6d5d53;
+        }
+
+        /* 情感栏目 */
+        .emotion-cols {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .emotion-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f0e6de;
+            transition: all 0.2s;
+        }
+        .emotion-card:hover {
+            border-color: #d65f4f;
+        }
+        .emotion-icon {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+        .emotion-card h3 {
+            font-size: 1rem;
+            color: #4a2e24;
+            margin-bottom: 8px;
+        }
+        .emotion-card p {
+            font-size: 0.85rem;
+            color: #8a7a6e;
+        }
+
+        /* 精选阅读 */
+        .read-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 40px;
+        }
+        .read-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 18px 0;
+            border-bottom: 1px dashed #e5d9d0;
+        }
+        .read-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #e0b8a5;
+            line-height: 1;
+            width: 40px;
+            text-align: center;
+        }
+        .read-info h3 {
+            font-size: 1rem;
+            color: #4a2e24;
+            margin-bottom: 4px;
+        }
+        .read-info p {
+            font-size: 0.85rem;
+            color: #8a7a6e;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #f0e6de;
+            overflow: hidden;
+        }
+        .faq-q {
+            padding: 18px 24px;
+            font-weight: 600;
+            color: #4a2e24;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+        .faq-q:hover {
+            background: #faf7f2;
+        }
+        .faq-q .arrow {
+            transition: transform 0.3s;
+            color: #d65f4f;
+        }
+        .faq-item.open .arrow {
+            transform: rotate(180deg);
+        }
+        .faq-a {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s;
+            color: #6d5d53;
+            font-size: 0.92rem;
+        }
+        .faq-item.open .faq-a {
+            padding: 0 24px 18px;
+            max-height: 300px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #3d2e25;
+            color: #d9cbc0;
+            padding: 50px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-about h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+        .footer-about p {
+            font-size: 0.9rem;
+            color: #b8a69a;
+        }
+        .footer-links h4 {
+            color: #fff;
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+        .footer-links ul {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        .footer-links a {
+            color: #b8a69a;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #e8b4a3;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #9a887b;
+            font-size: 0.85rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .story-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .emotion-cols {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .hero-copy h1 {
+                font-size: 2.2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                flex-direction: column;
+                padding: 20px 30px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                gap: 16px;
+            }
+            .nav-menu.open {
+                display: flex;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+            .tips-grid,
+            .read-list,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .hero {
+                padding: 40px 0;
+            }
+            .hero-copy h1 {
+                font-size: 1.8rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .emotion-cols {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            .header-inner {
+                padding: 12px 16px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">爱</div>
+            <div class="logo-text">幸福爱人<span>37</span></div>
+        </div>
+        <nav>
+            <button class="nav-toggle" aria-label="打开菜单">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">情感故事</a></li>
+                <li><a href="#">相处之道</a></li>
+                <li><a href="#">幸福问答</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏 -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <h1>幸福没有标准答案，<br><span class="highlight">但爱有迹可循</span></h1>
+                <p>「幸福爱人37」是一个专注于记录真实情感、探讨亲密关系、分享幸福智慧的温暖角落。这里没有说教，只有一个个普通人的故事和那些让爱长久的朴素道理。</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">阅读最新故事</a>
+                    <a href="#" class="btn btn-outline">了解相处之道</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-quote">我们不是因为完美才相爱，<br>而是因为相爱才更接近完美。</div>
+                <div class="hero-author">—— 一位结婚37年的读者</div>
+                <div class="hero-tag">❤ 今日推荐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门故事 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>热门情感故事</h2>
+                <p>每一个真实的故事里，都藏着关于爱的启示</p>
+            </div>
+            <div class="story-grid">
+                <article class="story-card">
+                    <div class="story-thumb">37</div>
+                    <div class="story-body">
+                        <h3>结婚37年，我们依然会牵手散步</h3>
+                        <p>从青丝到白发，他们用37年诠释了什么是"执子之手，与子偕老"。没有轰轰烈烈，只有日复一日的陪伴。</p>
+                        <div class="story-meta">
+                            <span>2025.05.12</span>
+                            <a href="#" class="read-more">阅读全文 →</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="story-card">
+                    <div class="story-thumb th2">久</div>
+                    <div class="story-body">
+                        <h3>那些吵不散的夫妻，都做对了什么？</h3>
+                        <p>争吵不可怕，可怕的是在争吵中忘记彼此相爱。看看那些越吵越好的夫妻是如何处理分歧的。</p>
+                        <div class="story-meta">
+                            <span>2025.05.10</span>
+                            <a href="#" class="read-more">阅读全文 →</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="story-card">
+                    <div class="story-thumb th3">暖</div>
+                    <div class="story-body">
+                        <h3>37件小事，让平凡日子开出花</h3>
+                        <p>幸福不需要盛大仪式，一顿早餐、一句晚安、一个拥抱，37件生活小事让爱意持续流动。</p>
+                        <div class="story-meta">
+                            <span>2025.05.08</span>
+                            <a href="#" class="read-more">阅读全文 →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相处之道 -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>幸福相处之道</h2>
+                <p>从真实的经验中提炼，给正在经营爱的你</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <div class="tip-icon">💬</div>
+                    <div class="tip-content">
+                        <h3>学会"好好说话"</h3>
+                        <p>很多关系破裂都源于沟通方式。试着用"我感到…"代替"你总是…"，表达需求而非指责。</p>
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">⏰</div>
+                    <div class="tip-content">
+                        <h3>保留独处与相处的时间</h3>
+                        <p>高质量的陪伴需要专注。每天放下手机半小时，哪怕只是安静地坐在一起，也能让心靠得更近。</p>
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">🌱</div>
+                    <div class="tip-content">
+                        <h3>允许彼此成长与改变</h3>
+                        <p>人是会变的，婚姻是两个人成长的旅程。接纳变化，并愿意为对方调整脚步，关系才能走远。</p>
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">🙏</div>
+                    <div class="tip-content">
+                        <h3>常怀感恩之心</h3>
+                        <p>不要把对方的付出视作理所当然。一句"谢谢你"、"辛苦了"，是婚姻里最便宜的润滑剂。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 情感专区 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>情感生活专区</h2>
+                <p>无论你正处于哪个阶段，这里都有你需要的温暖</p>
+            </div>
+            <div class="emotion-cols">
+                <div class="emotion-card">
+                    <div class="emotion-icon">💍</div>
+                    <h3>新婚磨合</h3>
+                    <p>从恋人到伴侣，适应新的角色与节奏。</p>
+                </div>
+                <div class="emotion-card">
+                    <div class="emotion-icon">👶</div>
+                    <h3>育儿家庭</h3>
+                    <p>在养育孩子的过程中，不忘经营夫妻关系。</p>
+                </div>
+                <div class="emotion-card">
+                    <div class="emotion-icon">🌇</div>
+                    <h3>中年相伴</h3>
+                    <p>面对压力与平淡，重燃爱的火花。</p>
+                </div>
+                <div class="emotion-card">
+                    <div class="emotion-icon">🌼</div>
+                    <h3>银发岁月</h3>
+                    <p>白首偕老，是陪伴也是习惯。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精选阅读 -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>编辑精选阅读</h2>
+                <p>每期精选，直击亲密关系核心</p>
+            </div>
+            <div class="read-list">
+                <div class="read-item">
+                    <div class="read-num">01</div>
+                    <div class="read-info">
+                        <h3>爱是动词，不是名词</h3>
+                        <p>爱需要行动来证明，而不是仅仅停留在感受层面。</p>
+                    </div>
+                </div>
+                <div class="read-item">
+                    <div class="read-num">02</div>
+                    <div class="read-info">
+                        <h3>如何安全地表达脆弱</h3>
+                        <p>敢于在对方面前示弱，是信任的最高级形式。</p>
+                    </div>
+                </div>
+                <div class="read-item">
+                    <div class="read-num">03</div>
+                    <div class="read-info">
+                        <h3>仪式感，是平淡生活的星光</h3>
+                        <p>不需要昂贵，一顿用心的晚餐也是仪式。</p>
+                    </div>
+                </div>
+                <div class="read-item">
+                    <div class="read-num">04</div>
+                    <div class="read-info">
+                        <h3>婚姻里的边界感</h3>
+                        <p>再亲密也要尊重对方的独立人格和空间。</p>
+                    </div>
+                </div>
+                <div class="read-item">
+                    <div class="read-num">05</div>
+                    <div class="read-info">
+                        <h3>当激情褪去，如何相处</h3>
+                        <p>激情是火花，而亲情和友情般的爱是长明灯。</p>
+                    </div>
+                </div>
+                <div class="read-item">
+                    <div class="read-num">06</div>
+                    <div class="read-info">
+                        <h3>原生家庭对婚姻的影响</h3>
+                        <p>看见模式，才能跳出循环，建立新的相处方式。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>关于幸福的常见疑问</h2>
+                <p>我们收集了读者最常问的问题，希望给你启发</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">为什么叫"幸福爱人37"？ <span class="arrow">▼</span></div>
+                    <div class="faq-a">"37"这个数字有两层含义：一是代表37年的婚姻历程，象征着长久与坚守；二是谐音"深情"，寓意着爱人之间需要深情投入。我们希望传递一种踏实、长久的幸福观。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">我的婚姻出现了危机，这里能帮到我吗？ <span class="arrow">▼</span></div>
+                    <div class="faq-a">我们提供情感故事和相处建议，能带来一些视角和启发。但涉及严重的婚姻危机，建议寻求专业婚姻咨询师的帮助。这里永远是倾听你的树洞。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">内容都是真实故事吗？ <span class="arrow">▼</span></div>
+                    <div class="faq-a">故事基于读者投稿和真实生活经验改编，为保护隐私会进行匿名化处理。我们坚持真实、真诚的原则，不虚构夸大。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">如何投稿自己的故事？ <span class="arrow">▼</span></div>
+                    <div class="faq-a">欢迎把你的故事发送到我们的邮箱，或通过公众号后台留言。一经选用，我们会与你联系并征得同意后发布。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>关于幸福爱人37</h3>
+                <p>我们相信，幸福是一种可以学习的能力。通过分享真实故事和实用智慧，帮助更多人理解爱、表达爱、经营爱，在平凡生活中收获长久的幸福。</p>
+            </div>
+            <div class="footer-links">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">情感故事</a></li>
+                    <li><a href="#">相处之道</a></li>
+                    <li><a href="#">幸福问答</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>关注我们</h4>
+                <ul>
+                    <li><a href="#">微信公众号</a></li>
+                    <li><a href="#">小红书</a></li>
+                    <li><a href="#">读者社群</a></li>
+                    <li><a href="#">投稿邮箱</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 幸福爱人37 温暖相伴 · 用心经营</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 移动端导航切换
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+        document.getElementById('navMenu').classList.toggle('open');
+    });
+
+    // FAQ 折叠交互
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+        item.querySelector('.faq-q').addEventListener('click', function() {
+            item.classList.toggle('open');
+        });
+    });
+</script>
+
+</body>
+  </html>
